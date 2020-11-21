@@ -2,8 +2,8 @@
 
 ## Installation
  `npm install Flask`
- 
+
 ## How to use
 * On Command :
-  - you need go to path => `cd ....\project\application`
+  - you need go to path => `cd ....\application`
   - run app => `py app.py`
