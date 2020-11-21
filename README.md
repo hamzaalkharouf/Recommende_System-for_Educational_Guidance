@@ -1,9 +1,9 @@
 # Recommender System for Educational Guidance
 
-
-
+## Installation
+ `npm install Flask`
+ 
 ## How to use
-* you need install flask => `npm install Flask`
-* then to run on command :
+* On Command :
   - you need go to path => `cd ....\project\application`
   - run app => `py app.py`
