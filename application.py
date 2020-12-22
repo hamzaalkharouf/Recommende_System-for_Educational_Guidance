@@ -7,9 +7,7 @@ data = pd.read_csv("C:\\Users\\King\\Documents\\GitHub\\Recommende_System-for_Ed
 information = pd.read_excel(r'C:\Users\King\Documents\GitHub\Recommende_System-for_Educational_Guidance\majors-information.xlsx', header=None)
 # test=[1,0,1,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,0,0,0,0,1,1,0,0,92,85,80,90,80,90,170,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 test=[1,0,1,1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,0,1,1,0,0,92,85,80,90,80,90,170,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-print(len(test))
-print(test[28])
-print(test[32])
+
 col=[]
 for i in range(0,len(test)):col.append(i)
 df = pd.DataFrame([test], columns = col)
