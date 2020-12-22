@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="login_e.css">
+    <link rel="stylesheet" href=" {{ url_for('index.static', filename='css/login_e.css') }} ">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>EduGuid</title>
+  </head>
+<body>
+
+<div class="header">
+        <a id="help" href="help.html">?</a>
+        <ul id="menu" >
+            <a id="b"  style="border-bottom: rgb(252, 252, 252) solid 1px;border-top: rgb(252, 252, 252) solid 1px;border-right: 1px solid rgb(252, 252, 252);border-left: 1px solid rgb(252, 252, 252); background-color:  rgba(252, 252, 252, 0.068); " href="login_e.html">تسجيل الدخول</a>
+            <a id="s" href="landing.html">الصفحة الرئيسية</a>
+        </ul>
+        <div id="logo">
+            <img src="home\static\material\logo.png" alt="" width="60" height="60" >
+
+            </div>
+            <div id="logo1">
+                EduGuide
+            </div>
+    </div>
+    <div class="footer">
+        <br>
+        Copyright © 2021
+        <div id="icon">
+          <img src="home\static\material\icon.png" alt="" width="80" height="20" >
+          </div>
+    </div>
+
+
+
+<div class="wrapper fadeInDown">
+
+    <div id="formContent">
+      <!-- عنوان -->
+<p id="login2">تسجيل الدخول</p>
+        <h>تسجيل الدخول عن طريق</h>
+<br>
+        <a id="i" href="http://www.facebook.com" class="fa fa-facebook" ></a>
+        <a id="i" href="http://www.twitter.com" class="fa fa-twitter"></a>
+        <a id="i" href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <br>
+        <h>او</h>
+
+      <!-- المربع -->
+      <form>
+
+        <input type="text" id="login" name="login" placeholder="البريد الالكتروني" required>
+        <input type="password" id="id"  name="login" placeholder="كلمة المرور" required>
+        <br>
+        <h>
+        <a id="" href="#">نسيت كلمة المرور؟</a>
+
+
+        <br>
+        <input type="submit" value="دخول" onclick="location.href ='home.html'">
+
+
+      </form>
+
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+           مستخدم جديد؟
+       <a id="f"href="signup_e.html" target="_blank"> إنشاء حساب</a>
+
+      </div>
+    </div>
+
+  </div>
+  <div id="pic">
+    <img src="home\static\material\logo.png" alt="" width="330" height="400"  >
+
+    </div>
+</body>
+</div>
+
+
+</html>

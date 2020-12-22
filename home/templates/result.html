@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGuide Recommender System</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href=" {{ url_for('index.static', filename='css/result.css') }} ">
+
+  </head>
+
+  <header>
+    <div class="header">
+      <a id="help" href="help.html">?</a>
+
+      <ul id="menu">
+        <a id="b" href="landing.html">تسجيل الخروج </a>
+        <a id="a" href="home.html">الصفحة الرئيسية</a>
+      </ul>
+      <div id="logo">
+        <img src="home\static\material\logo.png" alt="" width="60" height="60">
+
+      </div>
+      <div id="logo1">
+        EduGuide
+      </div>
+    </div>
+  </header>
+  <body>
+
+
+        <div class="inner">
+          <h1 class="center"> التخصصات المقترحة النهائية</h1>
+        <table class="center">
+          <tr>
+            <th>نسبة الاقتراح</th>
+            <th>الوصف </th>
+            <th>التخصص</th>
+          </tr>
+          <tr>
+            <td>50%</td>
+            <td>128 س (4سنين)</td>
+            <td>علم الحاسوب</td>
+
+          </tr>
+          <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td>..</td>
+            <td>...</td>
+
+          </tr>
+          <tr>
+            <td></td>
+            <td>..</td>
+            <td>...</td>
+
+          </tr>
+        </table>
+
+        </table>
+
+
+
+        <h2>  !! شكرا لكم لاستخدام التطبيق   </p2>
+
+      </div>
+    </div>
+
+    </body>
+
+    <footer>
+      <div class="footer">
+              <br>
+              Copyright © 2021
+              <div id="icon">
+                  <img src="home\static\material\icon.png" alt="" width="80" height="20">
+              </div>
+          </div>
+      </footer>
+      <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+
+    </script>
+
+
+</html>

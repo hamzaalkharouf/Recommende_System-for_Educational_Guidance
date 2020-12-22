@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href=" {{ url_for('index.static', filename='css/landing.css') }} ">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <title>EduGuid</title>
+    <script>
+        $(document).ready(function(){
+          $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+          });
+        });
+
+        </script>
+<div class="header">
+        <a id="help" href="help.html">?</a>
+        <ul id="menu" >
+            <a id="a" style="border-bottom: rgb(252, 252, 252) solid 1px;border-top: rgb(252, 252, 252) solid 1px;border-right: 1px solid rgb(252, 252, 252);border-left: 1px solid rgb(252, 252, 252); background-color:  rgba(252, 252, 252, 0.068); " href="#">الصفحة الرئيسية</a>
+            <a id="b" href="login_e.html">تسجيل الدخول</a>
+            <c id="flip" >حول</c>
+        </ul>
+        <div id="logo">
+            <img src="home\static\material\logo.png" alt="" width="60" height="60" >
+
+            </div>
+            <div id="logo1">
+                EduGuide
+            </div>
+    </div>
+    <div class="footer">
+        <br>
+        Copyright © 2021
+    <div id="icon">
+        <img src="home\static\material\icon.png" alt="" width="80" height="20" >
+        </div>
+    </div>
+<div id="panel">
+<br>
+<e>EduGuide تطبيق</e>
+<br>
+<br>
+تطبيق مطور باستخدام تقنية الذكاءالآلي لمساعدة
+<br>
+الطلبة المقبلين على اختيار التخصص الجامعي الذي
+<br>
+يحقق طموحاتهم ويوظف المهارات المفضلة لديهم ,و
+<br>
+يلبي العمل المستقبلي المهتمين به
+</div>
+<div id="pic">
+<img src="home\static\material\photo1.jpg" alt="" width="500" height="430" >
+
+</div>
+
+
+
+<div id="welcome">
+    <br>
+   <p> <h1> ... أهلاً و سهلاً بك</h1></p>
+    <h>EduGuide تطبيق</h>
+    <br>
+   <sub>
+    اذا كنت طالب مقبل على الدخول في الجامعة و تبحث عن التخصص المناسب او اذا كنت بالفعل
+    </sub><br>
+    تدرس في الجامعة و تواجهك مشاكل في تخصصك الحالي فإن هذا التظبيق  سياعدك في اختيار
+    <br>
+    .التخصص الملائم لطموحاتك وهواياتك والعمل المستقبلي المعني به
+    <br>
+    <br>
+    سارع في انشاء حسابك الخاص لتتمكن من الحصول على اقتراحات بالتخصصات المناسبة لك و
+    <br>
+    .المساهمة في التقييم
+    <br>
+
+     <a id="n" style="border-bottom: rgb(5, 5, 5) solid 2px  ;border-top: rgb(5, 5, 5) solid 2px;border-right: 2px solid rgb(5, 5, 5);border-left: 2px solid rgb(5, 5, 5); background-color:  rgba(207, 207, 207, 0.938); "href="signup_e.html"> حساب جديد</a>
+  <div id="f">
+     <a id="f" href="login_e.html" target="_blank">تسجيل الدخول</a>
+</div>
+    </div>
+
+
+</body>
+
+</html>

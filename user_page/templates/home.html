@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGuide Recommender System</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href=" {{url_for('user_page.static', filename='css/home.css')}} ">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+  </script>
+  <script rel="stylesheet" src=" {{url_for('user_page.static', filename='JS/home.js')}} "></script>
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <a id="help" href="help.html">?</a>
+
+      <ul id="menu">
+        <a id="b" href="landing.html">تسجيل الخروج </a>
+        <a id="a" href="home.html">الصفحة الرئيسية</a>
+      </ul>
+      <div id="logo">
+        <img src="photos\logo.png" alt="" width="60" height="60">
+
+      </div>
+      <div id="logo1">
+        EduGuide
+      </div>
+    </div>
+  </header>
+
+
+
+  <body >
+
+    <div class="box"style="margin-right:25%;" >
+
+      <div class="container " style="width: 800px;">
+        <div class="row" style="margin-right:35%;margin-top:4%">
+
+          <div class="col" >
+            <form class="" action="/user/home" method="post">
+
+            <div class="topic">
+              <h5
+                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;">
+                 عن شخصيتك : </h5>
+            </div>
+
+
+            <ul class="personal">
+              <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="p1"value="item_personal1"name="item_personal1"value="false">
+                  <label class="custom-control-label" for="p1">اجادة فن الحديث</label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="p2"value="item_personal2"name="item_personal1">
+                  <label class="custom-control-label" for="p2"> اجتماعي</label>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="p3"value="item_personal3"name="item_personal1">
+                  <label class="custom-control-label" for="p3"> الخوف من الدم والحقن</label>
+                </div>
+              </li>
+
+
+              <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="p4"value="item_personal4"name="item_personal1">
+                  <label class="custom-control-label" for="p4"> الجلوس ساعات طويلة امام الحاسوب</label>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="p5"value="item_personal5" name="item_personal1">
+                  <label class="custom-control-label" for="p5">تحمل الضغط</label>
+                </div>
+              </li>
+
+            </ul>
+            <input type="submit"class="float-left submit-button" name="" value="التخصصات المقترحة"style="margin-right:10%;margin-top:0.5%">
+          </form >
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer>
+
+      <br>
+      Copyright © 2021
+      <div id="icon">
+        <img src="photos\icon.png" alt="" width="80" height="20">
+
+      </div>
+    </footer>
+</body>
+
+</html>
