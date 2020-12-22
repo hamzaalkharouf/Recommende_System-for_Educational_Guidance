@@ -11,10 +11,7 @@ def landing():
 # def landing():
 #     return render_template('landing.html')
 #     # http://127.0.0.1:5000/static/landing
-@home.route('/static/result')
-def result():
-    return render_template('result.html')
-    # http://127.0.0.1:5000/static/result
+
 
 @home.route('/static/signup')
 def signup():

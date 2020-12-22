@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGuide Recommender System</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+  </script>
+  <script rel="stylesheet" src=" {{url_for('user_page.static', filename='JS/home.js')}} "></script>
+  <link rel="stylesheet" href=" {{url_for('user_page.static', filename='css/home.css')}} ">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a id="help" href="help.html">?</a>
+      <ul id="menu">
+        <a id="b" href="landing.html">تسجيل الخروج </a>
+        <a id="a" href="home.html">الصفحة الرئيسية</a>
+      </ul>
+      <div id="logo">
+        <img src="photos\logo.png" alt="" width="60" height="60">
+
+      </div>
+      <div id="logo1">
+        EduGuide
+      </div>
+    </div>
+  </header>
+
+
+
+      <div class="box"style="margin-right:25%;" >
+      <div class="container " style="width: 800px;">
+      <form class="" action="/user/mark" method="post">
+
+
+            <div class="row" id="second" style="margin-right:380px">
+            <div class="topic">
+              <h5
+              style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;">
+              ادخل علامة كل المواد الآتية واختر المفضلة</h5>
+              </div>
+
+             <div id="sc" class="subject sc">
+
+              <li class="list-group-item">
+              <!-- Default checked -->
+              <div class="custom-control custom-checkbox">
+              <!-- Default checked -->
+              <label class="custom-control-label" for="che2">مطالعة وقواعد
+                </label>
+              <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Reading_and_rules1"name="number_name" required>
+              </div>
+              </li>
+              <li class="list-group-item">
+              <!-- Default checked -->
+              <div class="custom-control custom-checkbox">
+              <label class="custom-control-label" for="che3">كيمياء
+              </label>
+              <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="chemistry1"name="number_name" required>
+              </div>
+              </li>
+              <li class="list-group-item">
+              <!-- Default checked -->
+              <div class="custom-control custom-checkbox"> <!-- Default checked -->
+              <label class="custom-control-label" for="che4">فيزياء
+              </label>
+              <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="physics1"name="number_name"required>
+              </div>
+              </li>
+              <li class="list-group-item">
+              <!-- Default checked -->
+              <div class="custom-control custom-checkbox"> <!-- Default checked -->
+              <label class="custom-control-label" for="che5">لغة انجليزية
+
+              </label>
+              <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="English_Language1"name="number_name">
+              </div>
+              </li>
+              <li class="list-group-item">
+              <!-- Default checked -->
+              <div class="custom-control custom-checkbox"> <!-- Default checked -->
+              <label class="custom-control-label" for="che6">رياضيات
+              </label>
+              <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Maths1"name="number_name">
+              </div>
+              </li>
+              </div>
+
+
+
+              <div id="let" class="subject let">
+                <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                <!-- Default checked -->
+                <label class="custom-control-label" for="che2">جغرافيا
+
+                  </label>
+                <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Geography2"name="number_name" required>
+                </div>
+                </li>
+                <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox">
+                <label class="custom-control-label" for="che3">الدراسات
+                </label>
+                <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Studies2"name="number_name" required>
+                </div>
+                </li>
+
+                <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                <label class="custom-control-label" for="che4">أدب وبلاغة
+                </label>
+                <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Literature_and_rhetoric2"name="number_name"required>
+                </div>
+                </li>
+                <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                <label class="custom-control-label" for="che5">لغة انجليزية
+                </label>
+                <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="English_Language2"name="number_name">
+                </div>
+                </li>
+                <li class="list-group-item">
+                <!-- Default checked -->
+                <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                <label class="custom-control-label" for="che6">رياضيات
+                </label>
+                <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Maths2"name="number_name">
+                </div>
+                </li>
+
+                </div>
+
+                <div id="voc" class=" subject voc">
+                  <li class="list-group-item">
+                  <!-- Default checked -->
+                  <div class="custom-control custom-checkbox">
+                  <!-- Default checked -->
+                  <label class="custom-control-label" for="che2">محاسبة
+                    </label>
+                  <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Accounting3"name="number_name" required>
+                  </div>
+                  </li>
+                  <li class="list-group-item">
+                  <!-- Default checked -->
+                  <div class="custom-control custom-checkbox">
+                  <label class="custom-control-label" for="che3">الادارة
+                  </label>
+                  <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Management3"name="number_name" required>
+                </div>
+
+                  </li>
+                  <li class="list-group-item">
+                  <!-- Default checked -->
+                  <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                  <label class="custom-control-label" for="che4">مطالعة وقواعد
+                  </label>
+                  <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Reading_and_rules3"name="number_name"required>
+                  </div>
+                  </li>
+                  <li class="list-group-item">
+                  <!-- Default checked -->
+                  <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                  <label class="custom-control-label" for="che5">رياضيات
+                  </label>
+                  <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Maths3"name="number_name">
+                  </div>
+                  </li>
+                  </div>
+
+                  <div id="ind" class="subject ind">
+                    <li class="list-group-item">
+                    <!-- Default checked -->
+                    <div class="custom-control custom-checkbox">
+                    <!-- Default checked -->
+                    <label class="custom-control-label" for="che2">اللغة العربية
+                      </label>
+                    <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Arabic5"name="number_name" required>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                    <!-- Default checked -->
+                    <div class="custom-control custom-checkbox">
+                    <label class="custom-control-label" for="che3">اللغة الانجليزية
+                    </label>
+                    <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="English5"name="number_name" required>
+                    </li>
+                    </div>
+                    <li class="list-group-item">
+                    <!-- Default checked -->
+                    <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                    <label class="custom-control-label" for="che4">رسم صناعي
+                    </label>
+                    <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Industrial_drawing5"name="number_name"required>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                    <!-- Default checked -->
+                    <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                    <label class="custom-control-label" for="che5">الرياضيات
+
+                    </label>
+                    <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Maths5"name="number_name">
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                    <!-- Default checked -->
+                    <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                    <label class="custom-control-label" for="che5">الفيزياء
+                    </label>
+                    <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Physics5"name="number_name">
+                    </div>
+                    </li>
+                    </div>
+
+
+                    <div id="tc" class="subject tc">
+                      <li class="list-group-item">
+                      <!-- Default checked -->
+                      <div class="custom-control custom-checkbox">
+                      <!-- Default checked -->
+                      <label class="custom-control-label" for="che2">البرمجة والاتمة
+                        </label>
+                      <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Programming_and_automation4"name="number_name" required>
+                      </div>
+                      </li>
+                      <li class="list-group-item">
+                      <!-- Default checked -->
+                      <div class="custom-control custom-checkbox">
+                      <label class="custom-control-label" for="che3">الاتصالات والالكترونيات
+                      </label>
+                      <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Communications_and_electronics4"name="number_name" required>
+                      </div>
+                      </li>
+                      <li class="list-group-item">
+                      <!-- Default checked -->
+                      <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                      <label class="custom-control-label" for="che4">اللغة العربية
+                      </label>
+                      <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Arabic4"name="number_name"required>
+                      </div>
+                      </li>
+                      <li class="list-group-item">
+                      <!-- Default checked -->
+                      <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                      <label class="custom-control-label" for="che5">اللغة الانجليزية
+                      </label>
+                      <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="English4"name="number_name">
+                      </div>
+                      </li>
+                      <li class="list-group-item">
+                      <!-- Default checked -->
+                      <div class="custom-control custom-checkbox"> <!-- Default checked -->
+                      <label class="custom-control-label" for="che5">الرياضيات
+                      </label>
+                      <input type="number" class="col-sm-6" id="rate" min="50" max="100"value="Maths4"name="number_name">
+                      </div>
+                      </li>
+
+                      </div>
+
+
+
+
+              <div class="col" id="first" style="margin-top:100px ;top: 30px;">
+              <class class="container">
+              <h2 style="margin-top: 10px; margin-right: 5px;">مرحباَ بك ....</h2>
+              <p style="font-weight:bolder;">للحصول على اقتراحات بالتخصصات الملائمة:</p>
+              <div class="col-sm-12">
+              <label for="avg" id="major">أدخل معدل الثانوية العامة</label><br>
+              <input id="majors" type="number" min="60" max="100" step="0.01"class="form-control" name="average" id="avg"placeholder="معدل القبول 60 - 100 " required>
+              </div>
+              <div class="col-sm-12">
+              <br>
+              <label for="sel1" id="major" >اختر الفرع</label><br>
+              <select id="branchselector" name="branch" onchange="showDiv('second' ,'third','fourth','result', this)">
+              <option value="none" selected disabled hidden></option>
+              <option value="sc">العلمي</option>
+              <option value="let">الأدبي</option>
+              <option value="voc">الريادة والأعمال</option>
+              <option value="ind">الصناعي</option>
+              <option value="tc">التكنولوجي</option>
+              </select>
+              </div>
+              </div>
+</div>
+            <input type="submit"class="float-left submit-button" name="" value="التخصصات المقترحة"style="margin-right: 300px;margin-top:0.5%;">
+            </form  >
+            </div>
+            </div>
+
+
+
+    <footer>
+
+      <br>
+      Copyright © 2021
+      <div id="icon">
+        <img src="photos\icon.png" alt="" width="80" height="20">
+
+      </div>
+    </footer>
+</body>
+
+</html>

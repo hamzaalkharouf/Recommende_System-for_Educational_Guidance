@@ -39,7 +39,7 @@ border: 1px;
   border-left-color:white;
     border-right-color:white;
     border-top-color:white;
-  
+
   }
 
 
@@ -296,7 +296,7 @@ select {
   box-shadow: 0px 0px 10px #404040;  border-radius: 10px;
   border-radius:20px;
   border-width: initial;
-/*   
+/*
   margin: 10px;
   padding: 10px;
   position : absolute;
@@ -332,7 +332,14 @@ button{
   font-size: 15px;
   overflow-y: scroll;
 }
-
+.book_favourites {
+  border: 1px solid #ccc;
+  width: 260px;
+  height: 280px;
+  padding: 4px;
+  font-size: 15px;
+  overflow-y: scroll;
+}
 .personal {
   border: 1px solid #ccc;
   width: 260px;
@@ -363,7 +370,7 @@ button{
 #first{
   position: fixed;
  }
- 
+
 #second,#third,#fourth,#result{
   display: none;
 }
